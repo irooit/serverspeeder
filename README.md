@@ -25,6 +25,17 @@
     chattr -i /serverspeeder/etc/apx* && /serverspeeder/bin/serverSpeeder.sh uninstall -f
 
 
+ service serverSpeeder start #启动
+ service serverSpeeder stop #停止
+ service serverSpeeder reload #重新加载配置
+ service serverSpeeder restart #重启
+ service serverSpeeder status #状态
+ service serverSpeeder stats #统计
+ service serverSpeeder renewLic #更新许可文件
+ service serverSpeeder update #更新
+ chattr -i /serverspeeder/etc/apx* && /serverspeeder/bin/serverSpeeder.sh uninstall -f #卸载
+
+
 锐速破解版功能：
 如果内核完全匹配就会自动下载安装。
 如果没有完全匹配的内核，会在界面提示可选内核，可以手动选个最接近的尝试
